@@ -1,0 +1,285 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'IBM Plex Serif', serif;    
+}
+header{
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+header ul{
+    list-style: none;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header #logo{
+    padding: 20px;
+    font-size: 1.7em;
+    font-weight:600;
+    display: inline-block;
+    margin-top: 10px;
+    width: 70%;
+}
+#nav-toggle{
+    display: inline-block;
+    width: 25%;
+    font-size: 1.7em;
+    margin-top: 10px;
+    text-align: center; 
+}
+header i{
+    padding:15px 25px;
+     background-color:rgba(255, 255, 255, 0.2);
+    border-radius: 10%;
+}
+nav li{
+    display: block;
+    padding: 20px 20px;
+
+}
+nav{
+    width: 400px;
+    position: absolute;
+    background-color: #3d405b;
+    min-height: 100vh;
+    transform: translateX(-400px);
+    transition:transform 0.4s;
+}
+
+header.open nav{
+    transform: translateX(0px);
+}
+
+header.scrolled {
+        background-color: #3d405b;
+}
+
+header a:hover{
+   opacity: 1;
+}
+
+#intro{
+background-image: linear-gradient(rgba(61,64,91,0.8),rgba(61,64,91,0.5)),url(new.jpg);
+    min-height: 680px;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: left;
+}
+
+#intro .container{
+    position:relative;
+    top:200px;
+    text-align: center;
+    max-width: 1000px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.intro-text strong,.intro-text em{
+    display: block;
+    margin: auto;
+    color: #e07a5f;
+    font-weight: 1000;
+    font-size: 1.1em;
+}
+
+#intro .call-to-action a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    background-color: #3d405b;
+    margin: 30px;
+}
+
+#intro i{
+    margin-right: 7px;
+}
+
+
+#about-me{
+    padding: 10px;
+    background-image: linear-gradient(rgba(61,64,91,0.5),rgba(61,64,91,0.2)),url(b3.jpg);
+    background-size: cover;
+    padding-top: 30px;
+    color: white;
+    padding-bottom: 30px;
+    background-attachment: fixed;
+
+}
+
+#about-me .whoiamimg{
+    margin: 10px auto 20px auto;
+    width: 70%;
+}
+
+
+.whoiamtext{
+text-align: center;
+margin: 10px auto 30px auto;
+    font-size: 1.1em;
+}
+
+.whoiamtext h1{
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.whoiamtext p{
+    margin: 15px;
+}
+
+
+#services{
+    text-align: center;
+    font-size: 1.1em;
+    padding-bottom: 40px;
+}
+
+#services h1{
+    padding: 20px;
+    font-size: 1.8em;
+}
+
+#services .icon{
+ 
+    margin:80px 50px 10px;
+
+    font-size: 2.5em;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    transform: rotate(45deg);
+    height: 100px;
+    width: 100px;
+    transition: all 0.4s;
+    outline: 5px solid transparent;
+    outline-offset: 0px
+}
+
+
+.icon svg {
+transform: rotate(-45deg);
+}
+
+
+#services .service:hover .icon{
+    background-color: #e07a5f;
+    outline-offset: 5px;
+    outline: 5px solid #e07a5f;
+}
+
+#history{
+    background-color: #e07a5f;
+    color: white;
+    padding-bottom: 30px;
+}
+
+#history h1{
+    text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.history-icon{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 0px 10px 0px;
+}
+.history-title{
+    display: inline-block;
+    padding: 10px 10px 10px 0px;;
+}
+
+.history{
+    padding: 10px;
+}
+
+.event-date,.event-title,.event-desc,.event-result{
+    padding: 10px 50px;
+}
+
+.event-date{
+    font-style: italic;
+    opacity: 0.8;
+    
+}
+.event-title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.event-result{
+    font-style: italic;
+    font-size: 1.05em;
+}
+
+#history .call-to-action{
+    
+    text-align: center;
+    background-color: #3d405b;
+    width: 70%;
+    margin: 30px  auto;
+}
+
+#history a{
+    color: white;
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#mrg{
+   margin-left: 10px; 
+}
+
+.event-container{
+    position: relative;
+}
+ .event-container::before{
+    content:'';
+    display: block;
+    width: 25px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+}
+
+.event-date{
+    position: relative;
+}
+
+.event-date::before{
+    content:'';
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    background-color: #3d405b;
+    position: absolute;
+    left: 0px;
+      
+}
+.history-title{
+    font-size: 1.2em;
+}
+
+.history-icon{
+    color: #3d405b;
+    font-size: 1.3em;
+    
+}
+
+img{
+width: 100%;
+}
