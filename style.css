@@ -3,6 +3,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+h1,h2,h3{
+    opacity: 1;
+}
 body{
     font-family: 'IBM Plex Serif', serif;    
 }
@@ -10,8 +13,14 @@ header{
     color: white;
     position: fixed;
     width: 100%;
-    z-index: 99;
+    z-index: 80;
 }
+header.open,
+header:hover {
+    background-color: #3d405b;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+}
+
 
 header ul{
     list-style: none;
@@ -53,9 +62,10 @@ nav{
     min-height: 100vh;
     transform: translateX(-400px);
     transition:transform 0.4s;
+    z-index: 99;
 }
 
-header.open nav{
+header.toggled nav{
     transform: translateX(0px);
 }
 
@@ -254,6 +264,7 @@ transform: rotate(-45deg);
     height: 100%;
     background-color: rgba(0,0,0,0.1);
     position: absolute;
+
 }
 
 .event-date{
@@ -278,6 +289,269 @@ transform: rotate(-45deg);
     color: #3d405b;
     font-size: 1.3em;
     
+}
+
+#skills{
+    color: white;
+    background-image: linear-gradient(rgba(61,64,91,0.8),rgba(61,64,91,0.5)),url(InShot_20190613_181017696.jpg);
+    background-size: cover;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-position:top;
+}
+
+#skills h1{
+
+    padding: 20px;
+    text-align: center;
+}
+
+
+.skill-container{
+    padding:10px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.skill{
+    padding: 10px;
+    position: relative;
+    font-size: 1.4em;
+    margin: 20px 0px;
+
+}
+
+
+.skill-icon svg{
+    
+    height: 140px;
+    fill:none;
+    stroke:#e07a5f;
+    stroke-width:5px;
+    stroke-dasharray:251 251; 
+    opacity: 1;
+    
+    
+}
+.skill-icon.one svg{
+   stroke-dashoffset : 70;
+}
+
+.skill-icon.two svg{
+   stroke-dashoffset : 30;
+}
+
+.skill-icon.three svg{
+   stroke-dashoffset : 45;
+}
+
+.skill-icon.four svg{
+   stroke-dashoffset : 50;
+}
+
+.skill-rating{
+    font-size: 1.2em;
+    position: relative;
+    top: -95px;
+}
+
+.skill-title{
+    padding: 10px 10px 0px 10px;  
+    font-size: 1.3em;
+}
+.tech-skills h1{
+margin-bottom: 20px;
+}
+
+.tech-skills{
+padding: 10px;
+max-width: 1000px;
+    
+}
+.tech-skill{
+    text-align: center;
+    font-size: 1.4em;
+    margin: 70px 0px;
+    
+}
+
+.techtitle{
+    padding: 10px;
+}
+
+.techicon::before{
+    position: relative;
+    content: '';
+    display: block;
+    height: 15px;
+    width: 80%;
+    background-color:#e07a5f; 
+}
+
+.techicon{
+    height: 15px;
+    width: 100%;
+    background-color:#3d405b;
+    position: relative;
+}
+
+.techicon.one::before{
+    position: relative;
+    content: '';
+    display: block;
+    height: 15px;
+    width: 90%;
+    background-color:#e07a5f; 
+}
+
+.techicon.two::before{
+    position: relative;
+    content: '';
+    display: block;
+    height: 15px;
+    width: 85%;
+    background-color:#e07a5f; 
+}
+.techicon.three::before{
+    position: relative;
+    content: '';
+    display: block;
+    height: 15px;
+    width: 60%;
+    background-color:#e07a5f; 
+}
+.techicon.four::before{
+    position: relative;
+    content: '';
+    display: block;
+    height: 15px;
+    width: 60%;
+    background-color:#e07a5f; 
+}
+
+#get-in-touch{
+    background-color: #3d405b;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 30px 0px;
+}
+.touch-icon{
+    padding: 20px;
+    font-size: 2em;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.3);
+    transform: rotate(45deg);
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+    outline: 4px transparent #e07a5f;
+    transition: all 0.4s;
+}
+
+.touch-icon svg{
+    transform: rotate(-45deg);
+}
+
+.touch:hover .touch-icon{
+    background-color: #e07a5f;
+    outline: 5px solid #e07a5f;
+    outline-offset: 5px;
+     
+}
+
+
+#contact{
+    background-color: #dddddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    min-height: 200px;
+}
+
+#contact h1{
+    color: #3d405b;
+}
+
+#contact .container{
+    max-width: 1000px;
+}
+
+#contact form{
+background-color: white;
+text-align: center;
+padding: 10px;
+margin: 20px auto;
+width: 100%;
+
+}
+#contact input{
+    display: block;
+    margin: 30px  auto;
+    width: 80%;
+    padding: 15px;
+    background-color:#dddddd;
+    border: none;
+    
+}
+
+#contact textarea{
+    display: block;
+    margin: 30px  auto;
+    width: 80%;
+    padding: 15px;
+    background-color:#dddddd;
+    border: none;
+    height: 100px;
+    
+}
+
+#conatct .call-to-action{
+    
+}
+
+#contact button{
+    padding: 20px;
+    margin: 10px;
+    background-color: #e07a5f;
+    color: white;
+    font-size: 0.7em;
+    border: none;
+}
+
+#map{
+
+}
+
+footer{
+    background-color: #3d405b;
+    color: white;
+    text-align: center;
+    min-height: 200px;
+}
+
+footer .link a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+    
+}
+footer .link{
+    text-align: center;
+    margin :20px;
+    display: inline-block;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    height: 70px ;
+    width: 70px;
+    border-radius: 50%;
+}
+footer p{
+    display: inline-block;
+    padding: 20px;
+    font-size: 1.1em;
 }
 
 img{
