@@ -92,6 +92,7 @@ background-image: linear-gradient(rgba(61,64,91,0.8),rgba(61,64,91,0.5)),url(new
     max-width: 1000px;
     color: white;
     font-size: 1.2em;
+    margin: 0px auto;
 }
 
 .intro-text strong,.intro-text em{
@@ -169,8 +170,8 @@ margin: 10px auto 30px auto;
     background-color: rgba(0,0,0,0.3);
     padding: 20px;
     transform: rotate(45deg);
-    height: 100px;
-    width: 100px;
+    min-height: 100px;
+    min-width: 100px;
     transition: all 0.4s;
     outline: 5px solid transparent;
     outline-offset: 0px
@@ -366,8 +367,10 @@ margin-bottom: 20px;
 }
 
 .tech-skills{
+    text-align: center''
 padding: 10px;
 max-width: 1000px;
+    margin: auto;
     
 }
 .tech-skill{
@@ -381,6 +384,7 @@ max-width: 1000px;
     padding: 10px;
 }
 
+/*
 .techicon::before{
     position: relative;
     content: '';
@@ -389,10 +393,11 @@ max-width: 1000px;
     width: 80%;
     background-color:#e07a5f; 
 }
+*/
 
 .techicon{
-    height: 15px;
-    width: 100%;
+    min-height: 25px;
+    min-width: 100%;
     background-color:#3d405b;
     position: relative;
 }
@@ -401,7 +406,7 @@ max-width: 1000px;
     position: relative;
     content: '';
     display: block;
-    height: 15px;
+    height: 25px;
     width: 90%;
     background-color:#e07a5f; 
 }
@@ -410,7 +415,7 @@ max-width: 1000px;
     position: relative;
     content: '';
     display: block;
-    height: 15px;
+    height: 25px;
     width: 85%;
     background-color:#e07a5f; 
 }
@@ -418,7 +423,7 @@ max-width: 1000px;
     position: relative;
     content: '';
     display: block;
-    height: 15px;
+    height: 25px;
     width: 60%;
     background-color:#e07a5f; 
 }
@@ -426,7 +431,7 @@ max-width: 1000px;
     position: relative;
     content: '';
     display: block;
-    height: 15px;
+    height: 25px;
     width: 60%;
     background-color:#e07a5f; 
 }
@@ -477,6 +482,7 @@ max-width: 1000px;
 
 #contact .container{
     max-width: 1000px;
+    margin: auto;
 }
 
 #contact form{
@@ -519,7 +525,14 @@ width: 100%;
     color: white;
     font-size: 0.7em;
     border: none;
+    transition: all 0.4s;
 }
+
+button:hover{
+    cursor: pointer;
+}
+
+
 
 #map{
 
@@ -544,8 +557,8 @@ footer .link{
     display: inline-block;
     padding: 20px;
     background: rgba(0,0,0,0.3);
-    height: 70px ;
-    width: 70px;
+    min-height: 70px ;
+    min-width: 70px;
     border-radius: 50%;
 }
 footer p{
@@ -557,3 +570,241 @@ footer p{
 img{
 width: 100%;
 }
+
+@media screen and (min-width:1000px){
+    
+    header{
+        text-align: center;
+        min-height: 100px;
+    }
+    
+    #logo{
+        display: inline-block;
+        width: 20%;
+        max-width: 300px;
+        margin-left: 20px;
+    }
+    #nav-toggle{
+        
+        display: none;
+            
+    }
+    
+    nav{
+        position: relative;
+        display: inline-block;
+        transform: translateX(0px);
+        min-height: 0px;
+        min-width: 70%;
+        margin: 0px auto;
+        background: none;
+        
+    }
+    nav li{
+        text-align: center;
+        display: inline-block;
+        font-size: 1.3em;
+            
+    }
+    #intro{
+        min-height: 900px;
+        background-position: top;
+        background-image: linear-gradient(rgba(61,64,91,0.7),rgba(61,64,91,0.6)),url(new.jpg);
+        margin: 0px;
+        
+    }
+    #intro .container{
+        top :300px;
+    }
+    
+    .intro-text{
+        font-size: 1.3em;
+        opacity: 1;
+    }
+    
+    #intro .call-to-action{
+        
+        padding: 20px;
+        font-size: 1.2em;
+        
+    }
+    
+    #about-me{
+        margin: 0px;
+        background-position: left;
+        background-image: linear-gradient(rgba(61,64,91,0.7),rgba(61,64,91,0.4)),url(b3.jpg);
+    }
+    
+    .whoiamimg{
+        max-width: 600px;
+
+    }
+    .whoiamtext{
+        max-width: 800px;
+        font-size: 1.4em;
+        opacity: 1;
+        
+    }
+    
+    #services{
+        max-width:1300px;
+        margin:50px auto;
+        text-align: center;
+    }
+    
+    .service{
+        display: inline-block;
+        width: 40%;
+        margin: 60px;
+        font-size: 1.3em;
+    }
+    #services h1:first-child{
+        font-size: 2.3em;
+        
+    }
+    
+    .service .icon{
+        height: 150px;
+        width: 150px;
+        text-align: center;
+        padding: 0px;
+        margin: 30px;
+    }
+    
+    .service .icon svg{
+        font-size: 1.6em;
+        
+        
+    }
+    #services .service:hover .icon{
+    background-color: #e07a5f;
+    outline-offset: 10px;
+    outline: 5px solid #e07a5f;
+}
+
+    .service h1{
+        margin-top: 20px;
+    }
+
+    #history{
+        
+        font-size: 1.3em;
+    }
+    
+    .history-container{
+        
+        position: relative;
+        padding: 0px;
+        max-width: 1400px;
+        margin: auto;
+    }
+    
+    .history.education{
+        
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+    
+    .history.work-history{
+     float: right;
+        width: 50%;
+        
+    }    
+    
+    #history .call-to-action{
+        clear: both;
+        margin: 60px auto;
+        max-width: 300px
+        
+    }
+    
+#history .for_psuedo::after{
+        content: '';
+        display: block;
+        clear: both;
+        
+    }
+    
+    #history h1{
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    
+    #skills{
+    font-size: 1.3em;
+    
+    }
+
+    .skill-container{
+        max-width: 1200px;
+        
+    }
+    
+    .skill{
+        display: inline-block;
+        width: 30%;
+        
+    }
+    .tech-skill{
+        display: inline-block;
+        width: 30%;
+    }
+    
+    .tech-skills{
+        max-width: 1200px;
+        text-align: center;
+    }
+    
+    .tech-skill:last-child{
+        margin-top: 0px;
+    }
+    
+    #get-in-touch{
+        font-size: 1.5em;
+        min-height: 500px;
+        text-align: center;
+
+    }
+    
+    .touch-icon{
+        height: 150px;
+        width: 150px;
+        font-size: 3em;
+    }
+    
+    .touch{
+        display: inline-block;
+        width: 30%;
+        padding-top: 30px;
+    }
+
+    #contact{
+        font-size: 1.2em;
+        min-height: 600px;
+        padding-top: 50px;
+    }
+
+    #contact .container{
+        max-width: 800px;
+         
+    }
+    form{
+        min-height: 450px;
+        
+    }
+    
+    footer{
+        min-height: 250px;
+        padding: 80px;
+        font-size: 1.5em;
+    }
+    .link{
+        height: 100px;
+        width: 100px;
+    }
+    
+}
+
+
+
