@@ -101,6 +101,11 @@ background-image: linear-gradient(rgba(61,64,91,0.8),rgba(61,64,91,0.5)),url(new
     color: #e07a5f;
     font-weight: 1000;
     font-size: 1.1em;
+    transition: all 1s;
+}
+
+.intro-text h1{
+    transition: all 1s;
 }
 
 #intro .call-to-action a {
@@ -115,6 +120,8 @@ background-image: linear-gradient(rgba(61,64,91,0.8),rgba(61,64,91,0.5)),url(new
 #intro i{
     margin-right: 7px;
 }
+
+
 
 
 #about-me{

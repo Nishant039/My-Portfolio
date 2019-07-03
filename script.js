@@ -75,6 +75,7 @@
         }else{
             removeClass(goUpButton, "show");
         }
+        
     })
     function toggleClass(element, className){
         var classList = element.className.split(" ");
@@ -101,4 +102,5 @@
             element.className = classList;
         }
     }
+    
 })();
