@@ -19,11 +19,11 @@ function switchcolor()
 var size=0;
 function animate(){
     if(size==0){
-        nm.style.fontSize="1.4em";
+        nm.style.fontSize="1.2em";
         size=1;
     }
     else{
-       nm.style.fontSize="2em";
+       nm.style.fontSize="1.6em";
         size=0;
     }
     
