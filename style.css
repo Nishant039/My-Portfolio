@@ -101,11 +101,11 @@ background-image: linear-gradient(rgba(61,64,91,0.8),rgba(61,64,91,0.5)),url(new
     color: #e07a5f;
     font-weight: 1000;
     font-size: 1.1em;
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .intro-text h1{
-    transition: all 1s;
+    transition: all 2s;
 }
 
 #intro .call-to-action a {
@@ -625,7 +625,7 @@ width: 100%;
     }
     
     .intro-text{
-        font-size: 1.3em;
+        font-size: 1.5em;
         opacity: 1;
     }
     
