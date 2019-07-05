@@ -20,13 +20,25 @@ var size=0;
 function animate(){
     if(size==0){
         nm.style.fontSize="1em";
+        $('.highfiveicon').css('font-size','1.4em')
         size=1;
     }
     else{
        nm.style.fontSize="1.4em";
+    $('.highfiveicon').css('font-size','1.8em')
         size=0;
     }
     
 }
 setInterval("animate()",3000)
 setInterval("switchcolor()",3000)
+
+$('.highfiveicon').on('click',function(){
+
+$('.highfive').text("Yay!")
+    
+$('.highfive').fadeOut(3000)
+
+}
+)
+

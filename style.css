@@ -94,6 +94,21 @@ background-image: linear-gradient(rgba(61,64,91,0.8),rgba(61,64,91,0.5)),url(new
     font-size: 1.2em;
     margin: 0px auto;
 }
+.highfive{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    transition: all 2s;
+
+}
+.highfiveicon{
+    display: inline-block;
+    transition: all 2s;
+}
+
+.highfiveicon:hover{
+    cursor: pointer;
+}
 
 .intro-text strong,.intro-text em{
     display: block;
